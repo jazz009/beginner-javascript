@@ -1,9 +1,7 @@
 
-function calculateBill(){
-    let total = 60 * 1.20;
+function calculateBill(bill, tax){
+    let total = bill * (1 + tax);
     return total; 
 }
 
-calculateBill();
-
-console.log(`My total is: ${calculateBill()}$`);
+console.log(`My total is: ${calculateBill(100,0.15)}$`);
